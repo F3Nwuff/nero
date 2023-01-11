@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=DM Sans");
+
+body, html{
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(images/background.jfif);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scontainer{
+    box-sizing: border-box;
+    background: rgba(255,255,255,0.2);
+    padding: 10px 50px;
+    border-radius: 20px;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+h1, h3{
+    color: #fff;
+    font-family: "DM Sans";
+    font-weight: 600;
+}
+
+span{
+    color: #fff;
+    font-weight: 500;
+    font-family: "Poppins";
+}
+
+.toggle-scontainer{
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+}
+
+.toggle{
+    width: 60px;
+    height: 35px;
+    border-radius: 40px;
+    background-color: #b9b9b9;
+    display: inline-block;
+}
+
+.toggle-c{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: white;
+    display: inline-block;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    transition: 300ms all;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+input[type="checkbox"]:checked + div .toggle-c{
+    left: 30px;
+    background-color: #006696;
+}
+
+input[type="radio"]{
+    border: 0px;
+    width: 10%;
+    height: 20px;
+    accent-color: #006696;
+}
+
+.togg-label{
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+}
+
+.flex{
+    display: flex;
+    gap: 5px;
+}
+
+.bottom{
+    align-self: center;
+}
+
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 16;
+    border: 2px solid #006696;
+    background-color: #00669677;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+label, input[type="radio"]{
+    cursor: pointer;
+}
+
+.scontainer input[placeholder="1.5 ℓ"]{
+    width: 10%;
+    margin-bottom: 20px;
+    margin-left: 69%;
+    padding: 10px;
+    outline: none;
+    font-size: 16px;
+    border: 1px solid #333;
+    border-radius: 20px;
+}
+
+.scontainer input[placeholder="0.2 ℓ"]{
+    width: 10%;
+    margin-bottom: 20px;
+    margin-left: 72.5%;
+    padding: 10px;
+    outline: none;
+    font-size: 16px;
+    border: 1px solid #333;
+    border-radius: 20px;
+}
