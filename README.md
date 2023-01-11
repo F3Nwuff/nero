@@ -6,4 +6,4 @@ Team Members:
 - Micky Malvino Kusandiwinata (2602174522) - L1CC
 - Rafael Sutiono (2602174535) - L1CC
 <br>
-![Poster](poster.PNG)
+<img src="poster.PNG">
