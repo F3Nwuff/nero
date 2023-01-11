@@ -1,29 +1,156 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Nero</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
 <body>
-    <div class="banner">
-        <div class="navbar">
-            <img src="images/logo.png" class="logo">
-            <ul>
-                <li><a href="#"><div class="navbarHighlight">About Us</div></a></li>
+  <div class="banner">
+      <div class="navbar">
+          <a href="aboutus.html"><img src="images/logo.png" class="logo"></a>
+          <ul>
+              <li><a href="#"><div class="navbarHighlight">About Us</div></a></li>
+              <li><a href="hydrationreport.html">Hydration Report</a></li>
+              <li><a href="calendar.html">Calendar</a></li>
+              <li><a href="settings.html"><i class="fas fa-gear"></i></a></li>
+          </ul>
+      </div>
+
+      <div class="img-slider">
+          <div class="slide active">
+            <img src="images/drinking.jpg" alt="slide1">
+            <div class="info">
+              <h2>Stay Hydrated</h2>
+              <p>Hydration is essential for a healthy body.</p>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="images/hq.jpg" alt="slide2">
+            <div class="info">
+              <h2>Our Headquarters</h2>
+              <p>Located at 111 White Building, Floor 7, our main headquarters boasts green views, wide office space, and most importantly, a healthy working environment.</p>
+            </div>
+          </div>
+          <div class="navigation">
+            <div class="btn active"></div>
+            <div class="btn"></div>
+          </div>
+      </div>
+    
+        <script type="text/javascript">
+        var slides = document.querySelectorAll('.slide');
+        var btns = document.querySelectorAll('.btn');
+        let currentSlide = 1;
+    
+        // Javascript for image slider manual navigation
+        var manualNav = function(manual){
+          slides.forEach((slide) => {
+            slide.classList.remove('active');
+    
+            btns.forEach((btn) => {
+              btn.classList.remove('active');
+            });
+          });
+    
+          slides[manual].classList.add('active');
+          btns[manual].classList.add('active');
+        }
+    
+        btns.forEach((btn, i) => {
+          btn.addEventListener("click", () => {
+            manualNav(i);
+            currentSlide = i;
+          });
+        });
+    
+        // Javascript for image slider autoplay navigation
+        var repeat = function(activeClass){
+          let active = document.getElementsByClassName('active');
+          let i = 1;
+    
+          var repeater = () => {
+            setTimeout(function(){
+              [...active].forEach((activeSlide) => {
+                activeSlide.classList.remove('active');
+              });
+    
+            slides[i].classList.add('active');
+            btns[i].classList.add('active');
+            i++;
+    
+            if(slides.length == i){
+              i = 0;
+            }
+            if(i >= slides.length){
+              return;
+            }
+            repeater();
+          }, 5000);
+          }
+          repeater();
+        }
+        repeat();
+        </script>
+
+      <h4><br></h4>
+      <h4>About Us</h4>
+      <h5><br>We are a team of passionate health enthusiasts who believe in the power of staying hydrated. We understand that life can get busy and it can be easy to forget to drink enough water. That's why we created Nero, our hydration reminder app, designed to help you stay on top of your daily water intake.<br><br>
+
+          Our app is simple to use, with a user-friendly interface that allows you to set personalized hydration goals and reminders. Whether you're at work, exercising, or just going about your day, our app will send you timely reminders to drink water, helping you stay on track with your hydration goals. Additionally, you may use our website here to track your statistics on your computer.<br><br>
+          
+          Our app also comes with a water tracking feature, which allows you to log your water intake and monitor your progress. This is a great way to see how much water you're consuming and make sure you're reaching your daily water goals. <br><br><br><br>
+      </h5>
+      <h4>Why Nero?</h4>
+      <h5><br>We are committed to making our app accessible to everyone, which is why we offer it for free on the App Store and Google Play. Our goal is to help as many people as possible stay hydrated and improve their overall health and well-being.
+          
+          In conclusion, our app is the perfect tool to help you stay on top of your hydration needs, making it easy to drink more water and maintain a healthy lifestyle. Download our app today and start reaping the benefits of staying hydrated.<br><br><br><br>
+      <h4>Our Founders</h4>
+      <h5><br>
+      <div class="fcontainers">
+          <div class="fcontainer">
+              <img src="images/rafa L.jpeg" alt="image1">
+              <figcaption>Rafael Sutiono</figcaption>
+          </div>
+          <div class="fcontainer">
+              <img src="images/mikey.jpeg" alt="image2">
+              <figcaption>Micky Malvino</figcaption>
+          </div>
+          <div class="fcontainer">
+              <img src="images/kennan.jpeg" alt="image2">
+              <figcaption>Kennan Latjandu</figcaption>
+          </div>
+      </div>
+      <br><br></h5>
+      <div class="footer">
+        <div class="top">
+          <div class="content">
+            <p>
+              Want to receive updates and promotions about Nero? <br>
+              Fill in your email below and subscribe to our newsletter for free.
+            </p>
+            <input type="text" placeholder="Your Email Address Here...">
+            <input type="submit" value="➜">
+          </div>
+  
+          <div class="links">
+  
+            <div class="link">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="#"><div class="footerHighlight">About Us</div></a></li>
                 <li><a href="hydrationreport.html">Hydration Report</a></li>
                 <li><a href="calendar.html">Calendar</a></li>
                 <li><a href="settings.html">Settings</a></li>
-            </ul>
+              </ul>
+            </div>
+          </div>
         </div>
-        <h4><br><br></h4>
-        <h4>About Us</h4>
-        <h5><br>Nero is a piece of software built on the purpose of helping you stay hydrated 
-            and meeting your required daily water intake by uses information such as your body 
-            weight to calculate your personal daily hydration requirements.
-            <br><br><br>blablabla<br><br><br>blablabla<br><br><br>blablabla<br><br><br>blablabla<br><br><br>blablabla<br><br><br><br><br></h5>
-        <h4>Features</h4>
-        <h5><br><br><br>blablabla<br><br><br>blablabla<br><br><br>blablabla<br><br><br>blablabla<br><br><br>blablabla</h5>
-    </div>
+        <div class="bottom">
+          <p> Nero® All rights reserved.</p>
+        </div>
+      </div>
+  </div>
 </body>
