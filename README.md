@@ -1,4 +1,9 @@
 # Nero, your Personal Hydration Assistant
 
 Live link: [https://rafaelsutiono.github.io/nero/](https://rafaelsutiono.github.io/nero/) <br><br>
-Read details about our site by clicking [this link](https://docs.google.com/document/d/1fpKXSzz19-zETBaA1KNJuKgogo5CXIDS/edit?usp=sharing&ouid=116101357079550296022&rtpof=true&sd=true).
+Team Members:
+- Hilkia Kennan Latjandu (2602174485) - L1BC
+- Micky Malvino Kusandiwinata (2602174522) - L1CC
+- Rafael Sutiono (2602174535) - L1CC
+<br>
+![Poster](poster.png)
