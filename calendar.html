@@ -1,19 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calendar - Nero</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 </head>
 <body>
     <div class="banner">
         <div class="navbar">
-            <img src="images/logo.png" class="logo">
+            <a href="aboutus.html"><img src="images/logo.png" class="logo"></a>
             <ul>
                 <li><a href="aboutus.html">About Us</a></li>
                 <li><a href="hydrationreport.html">Hydration Report</a></li>
                 <li><a href="#"><div class="navbarHighlight">Calendar</div></a></li>
-                <li><a href="settings.html">Settings</a></li>
+                <li><a href="settings.html"><i class="fas fa-gear"></i></a></li>
             </ul>
         </div>
+        <div class="kcontainer">
+      <div class="calendar">
+        <div class="month">
+          <i class="fas fa-angle-left prev"></i>
+          <div class="date">
+            <h1></h1>
+          </div>
+          <i class="fas fa-angle-right next"></i>
+        </div>
+        <div class="weekdays">
+          <div>S</div>
+          <div>M</div>
+          <div>T</div>
+          <div>W</div>
+          <div>T</div>
+          <div>F</div>
+          <div>S</div>
+        </div>
+        <div class="days"></div>
+        <div class="tday">
+          <div class="tdate">
+            <h2>today is</h2>
+            <p></p>
+            <h1>goal reached</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="footer">
+        <div class="top">
+          <div class="content">
+            <p>
+              Want to receive updates and promotions about Nero? <br>
+              Fill in your email below and subscribe to our newsletter for free.
+            </p>
+            <input type="text" placeholder="Your Email Address Here...">
+            <input type="submit" value="➜">
+          </div>
+  
+          <div class="links">
+  
+            <div class="link">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="aboutus.html">About Us</div></a></li>
+                <li><a href="hydrationreport.html">Hydration Report</a></li>
+                <li><a href="#"><div class="footerHighlight">Calendar</a></li>
+                <li><a href="settings.html">Settings</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="bottom">
+          <p> Nero® All rights reserved.</p>
+        </div>
+      </div> 
+    </div>
+    <script src="calendar.js"></script>
+</body>
+</html>
