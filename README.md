@@ -17,7 +17,7 @@ Team Members:
 ## Contents of this Repository
 
 ### Main stylesheet
-- *style.css* - stylesheet for Home page, Login page, and About Us page
+- *style.css* - stylesheet for Home page, Login page, About Us page, and Calendar page
 
 ### Home page
 - *index.html*
@@ -35,7 +35,6 @@ Team Members:
 
 ### Calendar page
 - *calendar.html*
-- *calendar.css* - stylesheet for `calendar.html`
 - *calendar.js* - script for `calendar.html`
 
 ### Settings page
