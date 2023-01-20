@@ -42,6 +42,7 @@ Team Members:
 - *settings.css* - stylesheet for `settings.html`
 
 ### Other
+- *README.md*
 - *poster.PNG* - poster image used in README
 - *images* - images used in source code
 
