@@ -5,7 +5,7 @@
 <img src="poster.PNG">
 </p>
 <br>
-Live link: [](https://rafaelsutiono.github.io/nero/) 
+Live link: [Click Here!](https://rafaelsutiono.github.io/nero/) 
 <br><br>
 
 Team Members:
