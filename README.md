@@ -5,7 +5,8 @@
 <img src="poster.PNG">
 </p>
 <br>
-Live link: [https://rafaelsutiono.github.io/nero/](https://rafaelsutiono.github.io/nero/) <br><br>
+Live link: [https://rafaelsutiono.github.io/nero/](https://rafaelsutiono.github.io/nero/) 
+<br><br>
 
 Team Members:
 - Hilkia Kennan Latjandu (2602174485) - L1BC
