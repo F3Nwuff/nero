@@ -36,6 +36,7 @@ Team Members:
 ### Calendar page
 - *calendar.html*
 - *calendar.css* - stylesheet for `calendar.html`
+- *calendar.js* - script for `calendar.html`
 
 ### Settings page
 - *settings.html*
